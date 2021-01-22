@@ -8,10 +8,25 @@ void main(List<String> arguments) {
   // Map
   dynamic m = {'Ahmed': 10, 'meshref': 20};
 
-  // Casting
-  y = y.toString();
+  // Casting + ternery operator
+  y = y == 0 ? 'ahmed' : 20;
+
+  // try ... catch
+  try {
+    y = int.parse(y);
+    print("parsed");
+  } catch (e) {
+    print('Invalid');
+  }
 
   // print('Hello world: ${cli.calculate()}!');
   print('l: ${l.length}');
   print('Key: ${m['Ahmed']}');
+  if (x != 10 || y == 0) {
+    print(true);
+  } else {
+    print(false);
+  }
+
+  print(cli.grade_sys());
 }
