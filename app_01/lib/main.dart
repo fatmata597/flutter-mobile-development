@@ -156,7 +156,7 @@ class _HomePageState extends State<_HomePage> {
       ),
       body: Container(
         alignment: Alignment.center,
-        color: Colors.white10,
+        color: Color.fromRGBO(0, 0, 0, .3),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
