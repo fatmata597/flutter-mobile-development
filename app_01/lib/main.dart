@@ -128,21 +128,46 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('I am the app bar'),
+      title: "Flutter app",
+      home: _HomePage(),
+    );
+  }
+}
+
+class _HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<_HomePage> {
+  int _counter = 0;
+
+  _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Flutter App'),
+      ),
+      body: Container(
+        alignment: Alignment.center,
+        color: Colors.white10,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Hello from the body'),
+            Text('$_counter'),
+          ],
         ),
-        body: Container(
-          alignment: Alignment.center,
-          color: Colors.red,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text('Hello from the body'),
-              Text('Hello again from the body'),
-            ],
-          ),
-        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        child: Icon(Icons.add),
       ),
     );
   }
