@@ -133,6 +133,7 @@ class MyApp extends StatelessWidget {
           title: Text('I am the app bar'),
         ),
         body: Column (
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget> [
             Text('Hello from the body'),
             Text('Hello again from the body'),
