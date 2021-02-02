@@ -132,12 +132,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('I am the app bar'),
         ),
-        body: Column (
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget> [
-            Text('Hello from the body'),
-            Text('Hello again from the body'),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('Hello from the body'),
+              Text('Hello again from the body'),
+            ],
+          ),
         ),
       ),
     );
