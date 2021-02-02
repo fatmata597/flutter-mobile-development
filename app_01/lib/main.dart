@@ -161,7 +161,16 @@ class _HomePageState extends State<_HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Hello from the body'),
-            Text('$_counter'),
+            Text(
+              '$_counter',
+              style: TextStyle(
+                color: Color.fromRGBO(255, 255, 255, .8),
+                fontSize: 25,
+                backgroundColor: Color.fromRGBO(0, 0, 0, .8),
+                fontWeight: FontWeight.bold,
+                height: 1.5,
+              ),
+            ),
           ],
         ),
       ),
