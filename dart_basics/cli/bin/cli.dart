@@ -6,22 +6,26 @@ void main(List<String> arguments) {
   // Set
   dynamic s = {10, 20, 'Meshref'};
   // Map
-  dynamic m = {'Ahmed': 10, 'meshref': 20};
+  dynamic obj = {'Ahmed': 10, 'meshref': 20};
 
   // Casting + ternery operator
   y = y == 0 ? 'ahmed' : 20;
 
-  // try ... catch
-  try {
-    y = int.parse(y);
-    print("parsed");
-  } catch (e) {
-    print('Invalid');
-  }
+  // list operations
+  l[0] = 'Ahmed Meshref';
+  print(l[0]);
+
+  print("--------------------");
+
+  // object opertations
+  obj.forEach((k, v) {
+    print("${k}: ${v}");
+  });
+  print("--------------------");
 
   // print('Hello world: ${cli.calculate()}!');
   print('l: ${l.length}');
-  print('Key: ${m['Ahmed']}');
+  print('Key: ${obj['Ahmed']}');
   if (x != 10 || y == 0) {
     print(true);
   } else {
@@ -29,4 +33,20 @@ void main(List<String> arguments) {
   }
 
   print(cli.grade_sys());
+
+  cli.listIterator(l);
+
+  // try and catch with the
+  try {
+    // sum (3 + 2 + 1 + 0)
+    print(cli.sumRec(3));
+  } catch (e) {
+    print("Invalid input value!");
+  }
+  // try and catch with the
+  try {
+    print(cli.sumRec(-10));
+  } catch (e) {
+    print("Invalid input value!");
+  }
 }
