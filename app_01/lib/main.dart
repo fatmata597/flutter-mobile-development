@@ -132,7 +132,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('I am the app bar'),
         ),
-        body: Center(
+        body: Container(
+          alignment: Alignment.center,
+          color: Colors.red,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
