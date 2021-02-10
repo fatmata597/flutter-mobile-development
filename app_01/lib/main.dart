@@ -215,6 +215,18 @@ class _HomePageState extends State<_HomePage> {
 class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Register"),
+      ),
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          children: [
+            Text("Register your account"),
+          ],
+        ),
+      ),
+    );
   }
 }
