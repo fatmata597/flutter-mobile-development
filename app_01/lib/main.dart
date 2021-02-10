@@ -148,6 +148,12 @@ class _HomePageState extends State<_HomePage> {
     });
   }
 
+  _resetCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -166,11 +172,25 @@ class _HomePageState extends State<_HomePage> {
               style: TextStyle(
                 color: Color.fromRGBO(255, 255, 255, .8),
                 fontSize: 25,
-                backgroundColor: Color.fromRGBO(0, 0, 0, .8),
                 fontWeight: FontWeight.bold,
                 height: 1.5,
               ),
             ),
+            RaisedButton(
+              onPressed: _resetCounter,
+              onLongPress: null,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              ),
+              padding: EdgeInsets.fromLTRB(40, 15, 40, 15),
+              color: Color.fromRGBO(0, 0, 0, .6),
+              highlightColor: Color.fromRGBO(200, 200, 200, .8),
+              splashColor: Color.fromRGBO(200, 200, 200, .5),
+              child: Text(
+                "reset",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            )
           ],
         ),
       ),
