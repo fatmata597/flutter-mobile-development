@@ -190,6 +190,15 @@ class _HomePageState extends State<_HomePage> {
                 "reset",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Register()),
+                );
+              },
+              child: Text("Register"),
             )
           ],
         ),
@@ -199,5 +208,13 @@ class _HomePageState extends State<_HomePage> {
         child: Icon(Icons.add),
       ),
     );
+  }
+}
+
+// second page
+class Register extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    
   }
 }
