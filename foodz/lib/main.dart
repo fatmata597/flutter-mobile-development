@@ -19,3 +19,84 @@ class App extends StatelessWidget {
     );
   }
 }
+
+
+//Data Tables
+
+ DataTable(
+              columns: <DataColumn>[
+                DataColumn(
+                  label: Text('Items'),
+                ), //Datacolumn
+                DataColumn(
+                  label: Text('Price'),
+                ), //Datacolumn
+              ], //Datacolumns
+              rows: <DataRow>[
+                DataRow(cells: <DataCell>[
+                  DataCell(
+                    Text('Rice'),
+                  ),
+                  DataCell(
+                    Text(
+                      '3000rwf',
+                      // style: TextStyle(
+                      //   color: Colors.white,
+                      // ),
+                    ),
+                  ),
+                ]), //Datarow
+                DataRow(cells: <DataCell>[
+                  DataCell(
+                    Text('Rice'),
+                  ),
+                  DataCell(
+                    Text(
+                      '3000rwf',
+                      // style: TextStyle(
+                      //   color: Colors.white,
+                      // ),
+                    ),
+                  ),
+                ]), //Datarow
+                DataRow(cells: <DataCell>[
+                  DataCell(
+                    Text('Rice'),
+                  ),
+                  DataCell(
+                    Text(
+                      '30GB',
+                      // style: TextStyle(
+                      //   color: Colors.white,
+                      // ),
+                    ),
+                  ),
+                ]), //Datarow
+                DataRow(cells: <DataCell>[
+                  DataCell(
+                    Text('Rice'),
+                  ),
+                  DataCell(
+                    Text(
+                      '30GB',
+                      // style: TextStyle(
+                      //   color: Colors.white,
+                      // ),
+                    ),
+                  ),
+                ]), //Datarow
+                DataRow(cells: <DataCell>[
+                  DataCell(
+                    Text('Rice'),
+                  ),
+                  DataCell(
+                    Text(
+                      '3000rwf',
+                      // style: TextStyle(
+                      //   color: Colors.white,
+                      // ),
+                    ),
+                  ),
+                ]), //Datarow
+              ], //DataRow
+            ), //Datatables
