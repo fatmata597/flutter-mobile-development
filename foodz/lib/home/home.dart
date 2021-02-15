@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.shopping_cart),
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Colors.black54,
       ),
     );
   }
